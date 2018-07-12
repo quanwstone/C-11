@@ -2,6 +2,8 @@
 /*
 thread:用于创建线程.可以传递参数.
 通过condition_variable可以使线程间同步.通过wait和nodify.
+wait会等到下次的nodify，但是如果nodify提前触发，wait将会阻塞.
+这就类似服务端和客户端关系.只有服务端先启动.
 */
 #include<iostream>
 #include<thread>	//线程
