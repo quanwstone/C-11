@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<iostream>
 #include<forward_list>
+#include"thread.h"
 //新的别名定义机制
 typedef int Int;
 using IInt = int;
@@ -31,6 +32,8 @@ int main(int argc, char*argv[])
 
 	/*forward_list*/
 	//Forward_List();
+	
+	test();
 
 	system("pause");
 

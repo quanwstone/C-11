@@ -1,7 +1,7 @@
 #pragma once
 /*
 thread:用于创建线程.可以传递参数.
-通过condition_variable可以使线程间同步.通过wait和nodify.
+条件变量:condition_variable可以使线程间同步.通过wait和nodify.
 wait会等到下次的nodify，但是如果nodify提前触发，wait将会阻塞.
 这就类似服务端和客户端关系.只有服务端先启动.
 */
@@ -15,7 +15,8 @@ namespace thread_h {
 	{
 		std::cout << "In Tread_Func1" << std::endl;
 	}
-	/*unique_Lock*/
+	/*unique_Lock:原理和lock_guard相同，都是RAII，区别就是更多特性,
+	内部实现拷贝构造函数:explicit*/
 	std::mutex mux;
 	void Mux_Func1()
 	{
@@ -56,7 +57,7 @@ namespace thread_h {
 
 }
 
-static void thread_test()
+void test()
 {
 	/*thread,可以直接参数传递*/
 	std::thread th(thread_h::Thread_Func1,1, nullptr);
