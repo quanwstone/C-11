@@ -56,5 +56,11 @@
     <ClInclude Include="explicit.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="decltype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="function.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

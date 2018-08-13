@@ -152,9 +152,11 @@
   <ItemGroup>
     <ClInclude Include="atomic.h" />
     <ClInclude Include="auto.h" />
+    <ClInclude Include="decltype.h" />
     <ClInclude Include="delete.h" />
     <ClInclude Include="explicit.h" />
     <ClInclude Include="for.h" />
+    <ClInclude Include="function.h" />
     <ClInclude Include="lambda.h" />
     <ClInclude Include="nullptr.h" />
     <ClInclude Include="random_device.h" />
